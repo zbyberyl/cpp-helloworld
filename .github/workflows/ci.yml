@@ -1,17 +1,17 @@
-name:c++ CI
+name: c++ CI
 
-on:
-  push:
+on: 
+  push: 
     branches: [master]
-  pull_request:
+  pull_request: 
     branches: [master]
 
-jobs:
+jobs: 
   build:
 
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
 
-    steps:
+    steps: 
     - uses: actions/checkout@v2
     - name: build and test
       run: |
